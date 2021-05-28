@@ -56,7 +56,7 @@ const Menu = ({height}) => {
                 className="height-100">
                     <Link onClick={()=> toggleMenu(false)}
                     style={{color:"#212f66"}}
-                    className="menu-links d-flex justify-content-center align-items-center third p-2" to="/projects">Properties</Link>
+                    className="menu-links d-flex justify-content-center align-items-center third p-2" to="/properties">Properties</Link>
                 </div>
                 <div
                 style={{backgroundColor:"#5271ff"}} 

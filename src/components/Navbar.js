@@ -57,7 +57,7 @@ const NavbarComponent = (props) => {
             <div style={{width:"33%"}} className="d-flex justify-content-end">
             <div>
               <NavbarText>
-              <Link className=" ml-2 p-2" style={{textDecoration:"none",borderRadius:"5px"}} to='/projects'>Properties</Link>
+              <Link className=" ml-2 p-2" style={{textDecoration:"none",borderRadius:"5px"}} to='/properties'>Properties</Link>
           
               </NavbarText>
             </div>

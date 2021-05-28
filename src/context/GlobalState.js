@@ -28,7 +28,7 @@ export const GlobalProvider = ({children}) =>{
     // Actions
     async function getProjects(){
         try {
-            const res= await axios.get('/api/projects')
+            const res= await axios.get('https://sanskar-backend.herokuapp.com/api/projects')
             dispatch({
                 type:'GET_PROJECTS',
                 payload: res.data
@@ -49,7 +49,7 @@ export const GlobalProvider = ({children}) =>{
         }
         const body=JSON.stringify(values)
         try {  
-            const res = await axios.post('/api/projects',body,config)
+            const res = await axios.post('https://sanskar-backend.herokuapp.com/api/projects',body,config)
             dispatch({
                 type:"ADD_PROJECT",
                 payload:res.data
@@ -66,7 +66,7 @@ export const GlobalProvider = ({children}) =>{
 
     async function deleteProject(id){
         try {
-            const res = await axios.delete(`/api/projects/${id}`)
+            const res = await axios.delete(`https://sanskar-backend.herokuapp.com/api/projects/${id}`)
             dispatch({
                 type:"DELETE_PROJECT",
                 payload:res.data
@@ -82,7 +82,7 @@ export const GlobalProvider = ({children}) =>{
 
     async function getFeedbacks(){
         try {
-            const res= await axios.get('/api/feedbacks/display')
+            const res= await axios.get('https://sanskar-backend.herokuapp.com/api/feedbacks/display')
             dispatch({
                 type:"GET_FEEDBACKS",
                 payload:res.data
@@ -103,7 +103,7 @@ export const GlobalProvider = ({children}) =>{
         }
         const body = JSON.stringify(values)
         try {
-            const res=await axios.post('/api/feedbacks',body,config)
+            const res=await axios.post('https://sanskar-backend.herokuapp.com/api/feedbacks',body,config)
             dispatch({
                 type:"ADD_FEEDBACK",
                 payload:res.data
@@ -120,7 +120,7 @@ export const GlobalProvider = ({children}) =>{
     async function resetFeedback(id){
         try {
             // eslint-disable-next-line
-            const res = await axios.put(`/api/feedbacks/${id}`)
+            const res = await axios.put(`https://sanskar-backend.herokuapp.com/api/feedbacks/${id}`)
             dispatch({
                 type:"RESET_FEEDBACK",
                 payload:id
@@ -137,7 +137,7 @@ export const GlobalProvider = ({children}) =>{
     async function resetAllFeedbacks(){
         try {
             // eslint-disable-next-line
-            const res = await axios.put('/api/feedbacks/admin/all')
+            const res = await axios.put('https://sanskar-backend.herokuapp.com/api/feedbacks/admin/all')
             dispatch(getFeedbacks())
         } catch (err) {
             dispatch({
@@ -156,7 +156,7 @@ export const GlobalProvider = ({children}) =>{
         const body=JSON.stringify(values)
         try {
             
-            await axios.post('/api/inquiry',body,config)
+            await axios.post('https://sanskar-backend.herokuapp.com/api/inquiry',body,config)
         } catch (err) {
             dispatch({
                 type:"ERROR_HANDLER",
@@ -190,7 +190,7 @@ export const GlobalProvider = ({children}) =>{
             setAuthToken(localStorage.token)
         }
         try {
-            const res = await axios.get('/api/auth')
+            const res = await axios.get('https://sanskar-backend.herokuapp.com/api/auth')
             dispatch({
                 type: "USER_LOADED",
                 payload:res.data
@@ -210,7 +210,7 @@ export const GlobalProvider = ({children}) =>{
         }
         const body=JSON.stringify({username,password})
         try {
-            const res = await axios.post('/api/auth',body,config)
+            const res = await axios.post('https://sanskar-backend.herokuapp.com/api/auth',body,config)
             dispatch({
                 type:"LOGIN_SUCCESS",
                 payload:res.data

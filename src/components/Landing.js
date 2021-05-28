@@ -17,6 +17,7 @@ import { Link } from 'react-router-dom'
 const Landing = props => {
     const {projects,feedbacks,getProjects,getFeedbacks,setPageHeight}=useContext(GlobalContext)
     const [imgLink,setImgLink]=useState([])
+    
     const carouselRef=useRef(null)
     let totalPages
     let resetTimeout;
@@ -25,6 +26,7 @@ const Landing = props => {
         let profileLeft=anime({
             targets:'.comp-aboutus',
             translateX:[-200,0],
+            delay:300,
             autoplay:false,
             duration:1000,
             opacity:['0','1'],            
@@ -35,6 +37,7 @@ const Landing = props => {
         let profileRight=anime({
             targets:'.profile-img',
             translateX:[200,0],
+            delay:300,
             autoplay:false,
             duration:1000,
             opacity:['0','1'],
@@ -45,6 +48,7 @@ const Landing = props => {
         let styleShape=anime({
             targets:'.style-shape',
             translateY:[200,0],
+            delay:300,
             autoplay:false,
             duration:1000,
             opacity:['0','0.4'],
@@ -63,6 +67,7 @@ const Landing = props => {
         
         // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
+    
     useEffect(()=>{
         if(window.innerHeight>=document.body.clientHeight){
             setPageHeight(window.innerHeight)    

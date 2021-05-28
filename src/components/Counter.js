@@ -61,7 +61,7 @@ const Counter = () => {
                 <div className="num-dsa">0</div>
                 <div className="d-flex flex-column pt-4" style={{maxWidth:"150px"}}>
                 <i class="fas fa-3x fa-university"></i>    
-                <span className="count">Number Of Direct Selling Agents</span>
+                <span className="count">Number Of DSA Associates</span>
                 </div>
                 </div>
 

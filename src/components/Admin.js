@@ -1,7 +1,7 @@
 import React,{Fragment, useState, useContext, useEffect} from 'react'
 import { Redirect } from 'react-router-dom'
 import { GlobalContext } from '../context/GlobalState'
-import {Button,Modal, ModalHeader, ModalBody,Card,CardBody,CardTitle,CardSubtitle,CardText} from 'reactstrap'
+import {Button,Modal, ModalHeader, ModalBody,Card,CardBody,CardTitle,CardText} from 'reactstrap'
 import axios from 'axios'
 import setAuthToken from '../utils/setAuthToken'
 
@@ -90,9 +90,9 @@ const AddProjectForm = () => {
                 description:"",
                 img:"",
                 location:""
-            })  
-
+            })      
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[formData.img])
 
     const uploadImage=()=>{
@@ -287,6 +287,7 @@ const Admin = () => {
         }
         else{
         setPageHeight(document.body.clientHeight)}
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[document.body.clientHeight])
     if(!isAuthenticated || token==null){
         return <Redirect to='/login'/>

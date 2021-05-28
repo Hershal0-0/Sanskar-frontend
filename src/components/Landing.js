@@ -69,15 +69,17 @@ const Landing = props => {
         }
         else{
         setPageHeight(document.body.clientHeight)}
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[document.body.clientHeight])
     useEffect(()=>{
         const links=[]
-        projects.map((project)=>{
+        projects.forEach((project)=>{
             links.push(...project.img)
         })
         links.sort(() => Math.random() - 0.5);
         setImgLink(links)
         Math.ceil(imgLink.length / itemsPerPage)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[projects])
     return (
         <div>

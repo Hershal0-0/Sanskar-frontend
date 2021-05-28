@@ -1,6 +1,5 @@
-import React, { useState,useContext, Fragment, useEffect } from 'react'
+import React, { useState,useContext, useEffect } from 'react'
 import { GlobalContext } from '../context/GlobalState'
-import axios from 'axios'
 
 
 const InquiryForm = (props)=>{
@@ -166,6 +165,7 @@ const Forms = props => {
     const {setPageHeight} = useContext(GlobalContext)
     useEffect(()=>{
         setPageHeight(document.body.clientHeight)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
     useEffect(()=>{
         if(window.innerHeight>=document.body.clientHeight){
@@ -173,6 +173,7 @@ const Forms = props => {
         }
         else{
         setPageHeight(document.body.clientHeight)}
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[document.body.clientHeight])
     const [formType,toggle]=useState("first")
     return (

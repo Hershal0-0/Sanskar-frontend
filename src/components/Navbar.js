@@ -1,7 +1,7 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import {
   Collapse,Navbar,NavbarToggler,NavbarBrand,
-  Nav,NavItem,NavbarText,Button
+  Nav,NavbarText,Button
 } from 'reactstrap';
 import {Link} from 'react-router-dom'
 import {Tooltip} from 'react-tippy'

@@ -12,7 +12,7 @@ const Menu = ({height}) => {
             let menu = document.querySelector('.menu')
             menu.style.height=`${value}px`
         }               
-        
+    // eslint-disable-next-line react-hooks/exhaustive-deps    
     },[menuIsOpen])
     useEffect(()=>{
         if(window.innerHeight>=document.body.clientHeight){
@@ -24,7 +24,8 @@ const Menu = ({height}) => {
             
             let menu = document.querySelector('.menu')
             menu.style.height=`${pageHeight}px`
-        }      
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps      
     },[document.body.clientHeight])
     if(!menuIsOpen){
         return null

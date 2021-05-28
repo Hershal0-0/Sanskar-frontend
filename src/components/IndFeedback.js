@@ -1,5 +1,5 @@
 import React from 'react'
-import {Card,CardBody,CardTitle,CardSubtitle,CardText} from 'reactstrap'
+import {Card,CardBody,CardTitle,CardText} from 'reactstrap'
 
 const IndFeedback = ({feedback}) => {
     return(

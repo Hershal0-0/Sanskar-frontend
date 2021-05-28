@@ -43,6 +43,7 @@ const Counter = () => {
             counting.restart()
             setCounter(true)
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[offset])
     
     return (

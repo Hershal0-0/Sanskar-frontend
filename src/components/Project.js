@@ -128,6 +128,7 @@ const Project = props => {
         }
         else{
         setPageHeight(document.body.clientHeight)}
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[document.body.clientHeight])
     
     return (

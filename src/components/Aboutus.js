@@ -28,7 +28,7 @@ const Aboutus = () => {
                     <Image
                     key={1}
                     cloudName={process.env.REACT_APP_CLOUDINARY_CLOUD_NAME}
-                    publicId='Sanskar/cake_w0fjj9'
+                    publicId='Sanskar/front_office_vbuq0o'
                     width="500"                                        
                     crop="scale"
                      />

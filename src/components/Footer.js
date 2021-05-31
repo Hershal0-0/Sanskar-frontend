@@ -8,6 +8,7 @@ const Footer = () => {
         <div className="footer">
             <div className="container d-flex justify-content-between  pb-3" style={{width:"80%"}}>
                 <div className="d-flex flex-column justify-content-center align-items-start rubik-text">
+                    <Link to="/login">Admin Login</Link>
                     <Link to="/aboutus">About Us</Link>
                     <Link to="/properties">Properties</Link>
                     <Link to="/">Feedbacks</Link>

@@ -50,7 +50,7 @@ const NavbarComponent = (props) => {
                 <i className="fas fa-building fa-3x mr-2"></i>
                 <div className="d-flex flex-column">
                 <h3 className="m-0 p-0 comp-name nav">Sanskar</h3>
-                <p  className="m-0 p-0 comp-sub">Builders And Developers</p>
+                <h6  className="m-0 p-0 comp-sub">Builders And Developers</h6>
                 </div>
               </Link>
             </div>

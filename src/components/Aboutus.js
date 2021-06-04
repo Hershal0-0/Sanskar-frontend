@@ -16,7 +16,7 @@ const Aboutus = () => {
                 <div className="d-flex flex-column comp-aboutus">
                     <div>
                     <h3 className="comp-name">Sanskar</h3>
-                    <p className="comp-sub">Builders & Developers</p>
+                    <h6 className="comp-sub">Builders & Developers</h6>
                     </div>
                     <div className="comp-profile pr-4">
                         {companyProfile[0]} <br/> <br/>

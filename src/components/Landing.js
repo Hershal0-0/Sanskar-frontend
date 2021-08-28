@@ -124,7 +124,7 @@ const Landing = props => {
                 <Tooltip 
                 position="bottom"
                 title="View All Properties">
-                <Link to='/projects'>
+                <Link to='/properties'>
                     <Button className="p-0" style={{backgroundColor:'transparent',border:'0px'}} ><i className="fas fa-2x fa-external-link-alt"></i></Button>
                 </Link>          
                 </Tooltip>
